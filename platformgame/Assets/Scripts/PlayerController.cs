@@ -15,11 +15,15 @@ public class PlayerController : MonoBehaviour {
 
 	public bool IsGrounded; //true or false statement
 
+	private Animator MyAnim;
+
 	void Start () {
 		MyRigidBody = GetComponent<Rigidbody2D>(); //get component from inspector, attach rigidbody, will know its player
+		MyAnim = GetComponent<Animator>();
 	}
 	
 	void Update () {
+
 
 		IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, WhatIsGround);
 
@@ -27,10 +31,12 @@ public class PlayerController : MonoBehaviour {
 		if(Input.GetAxisRaw ("Horizontal") > 0f) //horizontal movement, calling input 
 		{
 			MyRigidBody.velocity = new Vector3(MoveSpeed, MyRigidBody.velocity.y, 0f); // 0f, zero float
+			transform.localScale = new Vector3(1f, 1f, 1f); //stay when going forward
 		}
 		else if(Input.GetAxisRaw("Horizontal") < 0f) //horizontal movement, calling input 
 		{
 			MyRigidBody.velocity = new Vector3(-MoveSpeed, MyRigidBody.velocity.y, 0f); // 0f, zero float
+			transform.localScale = new Vector3(-1f, 1f, 1f); //turn when going back
 		}
 		else
 		{
@@ -42,6 +48,8 @@ public class PlayerController : MonoBehaviour {
 			MyRigidBody.velocity = new Vector3(MyRigidBody.velocity.x, JumpSpeed, 0f);
 		}
 
+		MyAnim.SetFloat("Speed", Mathf.Abs(MyRigidBody.velocity.x)); //math absolute, getting absolute number, any minus number as a positive number. 
+		MyAnim.SetBool("Grounded", IsGrounded);
 
 	}
 }
