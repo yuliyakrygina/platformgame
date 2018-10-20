@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4822511833780178}
   - component: {fileID: 61631044788422208}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Platform 1x3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4658376214158870}
   - component: {fileID: 212462963024580002}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: sprites_124
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4588024052478998}
   - component: {fileID: 212724356334554670}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: sprites_123
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4702969920101280}
   - component: {fileID: 212760720487444202}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: sprites_122
   m_TagString: Untagged
   m_Icon: {fileID: 0}

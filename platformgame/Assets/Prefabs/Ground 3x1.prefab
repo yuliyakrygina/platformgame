@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4074167679428592}
   - component: {fileID: 212962955883368044}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: sprites_152 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4869604964387444}
   - component: {fileID: 61897776396974174}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ground 3x1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4594602955854558}
   - component: {fileID: 212405107002046262}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: sprites_152 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4937767232692056}
   - component: {fileID: 212551871728552930}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: sprites_123 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
