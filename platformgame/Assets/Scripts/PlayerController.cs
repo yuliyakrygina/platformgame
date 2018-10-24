@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
 		MyAnim = GetComponent<Animator>();
 	}
 	
-	void Update () {
+	void FixedUpdate () {
 
 
 		IsGrounded = Physics2D.OverlapCircle(GroundCheck.position, GroundCheckRadius, WhatIsGround);
